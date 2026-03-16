@@ -82,6 +82,7 @@ DEFAULT_CONSTANTS = ConsensusConstants(
     # TODO: todo_v2_plots finalize fork height
     HARD_FORK2_HEIGHT=uint32(0xFFFFFFFA),
     SOFT_FORK8_HEIGHT=uint32(8655000),
+    SOFT_FORK9_HEIGHT=uint32(8665000),
     # starting at the hard fork 2 height, v1 plots will gradually be phased out,
     # and stop working entirely after (1 << this) many epochs
     PLOT_V1_PHASE_OUT_EPOCH_BITS=uint8(8),
