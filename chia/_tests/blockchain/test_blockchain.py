@@ -2642,7 +2642,7 @@ class TestBodyValidation:
 
         # after the 3.0 hard fork, we no longer allowe block references, so the
         # block_refs parameter is no longer valid, nor this test
-        if consensus_mode < ConsensusMode.HARD_FORK_3_0:
+        if consensus_mode < ConsensusMode.SOFT_FORK_2_7:
             blocks = bt.get_consecutive_blocks(
                 1,
                 block_list_input=blocks,
